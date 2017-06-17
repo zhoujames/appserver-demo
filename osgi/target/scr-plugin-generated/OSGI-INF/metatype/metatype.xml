@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/metatype">
-    <OCD id="io.jz.poc.appserver.osgi.LightweightHttpServerService" name="%io.jz.poc.appserver.osgi.LightweightHttpServerService.name" description="%io.jz.poc.appserver.osgi.LightweightHttpServerService.description">
-        <AD id="conf.path" type="String" default="/apps/appserver/config.json" name="%conf.path.name" description="%conf.path.description"/>
-    </OCD>
-    <Designate pid="io.jz.poc.appserver.osgi.LightweightHttpServerService">
-        <Object ocdref="io.jz.poc.appserver.osgi.LightweightHttpServerService"/>
-    </Designate>
-</metatype:MetaData>
