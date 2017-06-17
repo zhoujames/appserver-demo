@@ -1,0 +1,10 @@
+/*.idea
+/*.iml
+/.git
+/.gitexcludes
+core/target
+core/*.iml
+osgi/target
+osgi/*.iml
+dist/target
+dist/*/iml
