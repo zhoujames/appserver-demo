@@ -1,0 +1,46 @@
+{
+  "port":8080,
+  "socketTimeout": 30,
+  "documentRoot": "c:/html/default",
+  "virtualHosts": [
+    {
+      "name" : "localhost:8080",
+      "documentRoot": "c:/html/localhost",
+      "contexts":[
+        {
+          "@class":"io.jz.poc.appserver.plugin.FileContext",
+          "alias" : "/child",
+          "path" :"/subfolder",
+          "type" : "file"
+        },
+        {
+          "@class":"io.jz.poc.appserver.plugin.FileContext",
+          "path": "/",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name" : "127.0.0.1:8080",
+      "documentRoot": "c:/html/www.test.com",
+      "contexts":[
+        {
+          "@class":"io.jz.poc.appserver.plugin.FileContext",
+          "path" : "/",
+          "type" : "file"
+        }
+      ]
+    },
+    {
+      "name" : "~DEFAULT~",
+      "documentRoot": "c:/html/default",
+      "contexts":[
+        {
+          "@class":"io.jz.poc.appserver.plugin.FileContext",
+          "path" : "/",
+          "type" : "file"
+        }
+      ]
+    }
+  ]
+}

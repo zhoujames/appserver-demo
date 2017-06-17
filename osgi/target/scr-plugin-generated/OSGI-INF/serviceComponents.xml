@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component enabled="true" immediate="true" name="io.jz.poc.appserver.osgi.LightweightHttpServerService" activate="activate" deactivate="destroy">
+        <implementation class="io.jz.poc.appserver.osgi.LightweightHttpServerService"/>
+        <service servicefactory="false">
+            <provide interface="io.jz.poc.appserver.osgi.LightweightHttpServerService"/>
+        </service>
+        <property name="conf.path" type="String" value="/apps/appserver/config.json"/>
+        <property name="service.pid" value="io.jz.poc.appserver.osgi.LightweightHttpServerService"/>
+        <reference name="repository" interface="org.apache.sling.jcr.api.SlingRepository" cardinality="1..1" policy="static" bind="bindRepository" unbind="unbindRepository"/>
+    </scr:component>
+</components>

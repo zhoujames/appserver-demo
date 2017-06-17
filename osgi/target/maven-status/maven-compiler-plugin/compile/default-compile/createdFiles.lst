@@ -1,0 +1,4 @@
+io\jz\poc\appserver\osgi\handler\JcrFileRequestHandler.class
+io\jz\poc\appserver\osgi\plugin\JcrContext.class
+io\jz\poc\appserver\osgi\LightweightHttpServerService.class
+io\jz\poc\appserver\osgi\LightweightHttpServerService$1.class
